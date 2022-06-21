@@ -26,6 +26,7 @@ public class SideMenu_StrokePicker extends JPanel implements ChangeListener{
     add(strokeSlider);
     add(label);
   }
+
   @Override
   public void stateChanged(ChangeEvent e) {
     PaintWindowBuild.stroke = changeStroke(strokeSlider.getValue());
