@@ -5,7 +5,7 @@ import javax.swing.*;
 
 public class FrameBuild extends JFrame{
   
-  static final int FRAME_WIDTH = 1920;
+static final int FRAME_WIDTH = 1920;
   static final int FRAME_HEIGHT = 1080;
 
 
