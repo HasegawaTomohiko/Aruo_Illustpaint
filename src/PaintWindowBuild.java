@@ -1,5 +1,4 @@
 import java.awt.*;
-import java.awt.image.*;
 import java.awt.event.*;
 import javax.swing.*;
 // import javax.swing.SwingUtilities;
@@ -18,6 +17,8 @@ public class PaintWindowBuild extends JPanel implements MouseListener, MouseMoti
   static int green = 0;
   static int blue = 0;
   static float stroke = 0.0f;
+
+  // public static int DRAW_MODE; set draw mode(choose tools kit)
 
   public PaintWindowBuild(){
     this.setSize(WINDOW_WIDTH,WINDOW_HEIGHT);

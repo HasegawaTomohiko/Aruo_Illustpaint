@@ -1,14 +1,18 @@
 import java.awt.event.*;
-import java.awt.*;
 import javax.swing.*;
-
+import javax.swing.filechooser.*;
 public class MenuItem_OpenBuild extends MenuItemBuild implements ActionListener{
     MenuItem_OpenBuild(){
       super("Open");
+      addActionListener(this);
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
-      JFileChooser filechoose;
+      System.out.println("Selected Open");
+      JFileChooser fileChooser = new JFileChooser(FileSystemView.getFileSystemView().getHomeDirectory());
+
+      fileChooser.showOpenDialog(null);
+      
     }
 }

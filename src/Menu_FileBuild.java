@@ -5,6 +5,8 @@ public class Menu_FileBuild extends MenuBuild{
       add(new MenuItem_NewBuild());
       add(new MenuItem_OpenBuild());
       addSeparator();
+      add(new MenuItem_SaveBuild());
+      addSeparator();
       add(new MenuItem_ExitBuild());
     }
 }
